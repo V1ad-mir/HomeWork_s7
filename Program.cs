@@ -40,7 +40,6 @@
 
 // double[,] inputAvtoArray(double[,] array)
 // {
-
 //   int numFist = new Random().Next(-10, 10);
 //   int numLast = new Random().Next(10, 100);
 //   int num2 = new Random().Next(0, 4);
@@ -56,20 +55,20 @@
 //   return array;
 // }
 
+
 // int[] vvodPosition(int[] array2, string[] position)
 // {
-
 //   for (int i = 0; i < position.Length; i++)
 //   {
-
 //     array2[i] = Convert.ToInt32(position[i]);
 //   }
 //   return array2;
 // }
+
+
 // int rows = new Random().Next(2, 10);
 // int columns = new Random().Next(2, 10);
 // double[,] array = new double[rows, columns];
-
 // Console.WriteLine("Введите индекс элемента (индекс строки, пробел, индекс столбца)");
 // string[] position = Console.ReadLine().Trim().Split(' ');
 // if ((int.TryParse(position[0], out int num)))
@@ -119,14 +118,6 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-
-// Задача 46: Задайте двумерный массив размером m×n, заполненный
-//  случайными целыми числами.
-// m = 3, n = 4.
-// 1  4  8  19
-// 5  -2 33 -2
-// 77 3  8   1
-
 // Console.WriteLine("Введите число строк");
 // int rows = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Введите число столбцов:");
@@ -155,14 +146,14 @@
 // }
 // Console.WriteLine("Среднее арифметическое каждого столбца c округлением до тысячных: "+String.Join(";  ",array2));
 
-                          // Семинар
-// Задача 51: Задайте двумерный массив. Найдите сумму элементов, 
-// находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
-// Например, задан массив:
-// 1 4 7 2
-// 5 9 2 3
-// 8 4 2 4
-// Сумма элементов главной диагонали: 1+9+2 = 12
+//                           // Семинар
+// // Задача 51: Задайте двумерный массив. Найдите сумму элементов, 
+// // находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
+// // Например, задан массив:
+// // 1 4 7 2
+// // 5 9 2 3
+// // 8 4 2 4
+// // Сумма элементов главной диагонали: 1+9+2 = 12
 
 Console.WriteLine("Введите число строк:");
 int rows = Convert.ToInt32(Console.ReadLine());
@@ -197,7 +188,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 }
 
 
-        //  Вариант вывода на семинаре
+//         //  Вариант вывода на семинаре
 // Console.WriteLine("Сумма элементов  главной диагонали равна:"); 
 // for (int i = 0; i < array2.Length; i++)
 // {
@@ -209,13 +200,13 @@ for (int i = 0; i < array.GetLength(0); i++)
 
 
               // Вариант вывода 2
-// Console.WriteLine("сумма чисел главной диагонали " +sum);
+// Console.WriteLine("сумма чисел главной диагонали: ");
 
 // Console.WriteLine(String.Join("+",array2)+"="+sum);
 
 
                 // Вариант вывод 3
- Console.WriteLine("Сумма элементов  главной диагонали равна:"+sum);
+ Console.WriteLine("Сумма элементов  главной диагонали равна:");
 for (int i = 0; i < array2.Length-1; i++)
 {
    Console.Write(array2[i]+"+");
